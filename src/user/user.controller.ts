@@ -1,6 +1,7 @@
 import {
   Body,
   Controller,
+  Delete,
   HttpException,
   HttpStatus,
   Logger,
@@ -28,6 +29,19 @@ export class UserController {
       this.logger.error(error);
       throw new HttpException(
         'Erro ao criar usuário',
+        HttpStatus.INTERNAL_SERVER_ERROR,
+      );
+    }
+  }
+
+  @Delete()
+  async deleteAllUsers() {
+    try {
+      await this.userService.deleteAllUsers();
+    } catch (error) {
+      this.logger.error(error);
+      throw new HttpException(
+        'Erro ao deletar usuários',
         HttpStatus.INTERNAL_SERVER_ERROR,
       );
     }

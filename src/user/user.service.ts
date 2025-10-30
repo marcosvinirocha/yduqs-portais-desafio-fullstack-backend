@@ -14,4 +14,10 @@ export class UserService {
     this.logger.log(`Usuário criado com sucesso. ID: ${createdUser.id}`);
     return createdUser;
   }
+
+  async deleteAllUsers() {
+    this.logger.log('Deletando todos os usuários...');
+    await this.userRepository.deleteAllUsers();
+    this.logger.log('Todos os usuários foram deletados com sucesso.');
+  }
 }

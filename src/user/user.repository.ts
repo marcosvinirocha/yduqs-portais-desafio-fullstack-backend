@@ -11,4 +11,8 @@ export class UserRepository {
       data: user,
     });
   }
+
+  async deleteAllUsers() {
+    return this.prismaService.user.deleteMany();
+  }
 }
