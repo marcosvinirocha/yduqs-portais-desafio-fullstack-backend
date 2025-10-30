@@ -4,16 +4,17 @@
         "json",
         "ts"
     ],
-    "rootDir": "..",
-    "testEnvironment": "node",
+    "rootDir": ".",
     "testRegex": ".*\\.e2e-spec\\.ts$",
     "transform": {
         "^.+\\.(t|j)s$": "ts-jest"
     },
-    "setupFilesAfterEnv": [
-        "<rootDir>/test/e2e/setup-e2e.ts"
+    "collectCoverageFrom": [
+        "**/*.(t|j)s",
+        "!**/*.e2e-spec.ts"
     ],
+    "testEnvironment": "node",
     "moduleNameMapper": {
-        "^src/(.*)$": "<rootDir>/src/$1"
+        "^src/(.*)$": "<rootDir>/../src/$1"
     }
 }
