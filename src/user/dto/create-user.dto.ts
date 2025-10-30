@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
 import { IsEmail, IsNotEmpty, Matches } from 'class-validator';
 import { IsCPF } from 'class-validator-cpf';
 
@@ -12,7 +11,7 @@ export class CreateUserDto {
   name: string;
 
   @IsCPF({ message: 'CPF inválido' })
-  @Matches(/^\d{11}$/, { message: 'CPF must have 11 digits' })
+  @Matches(/^\d{11}$/, { message: 'CPF deve ter 11 digitos' })
   cpf: string;
 
   @IsNotEmpty({
