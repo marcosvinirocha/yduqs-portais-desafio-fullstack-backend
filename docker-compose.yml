@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: postgres_prisma
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: minha_app
+      # Sem senha → usuário 'postgres' sem password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    command: >
+      postgres
+      -c listen_addresses=*
+      -c log_statement=all
+      -c log_connections=on
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin_prisma
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@prisma.com
+      PGADMIN_DEFAULT_PASSWORD: prisma123
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+
+volumes:
+  postgres_data:
+  pgadmin_data:
