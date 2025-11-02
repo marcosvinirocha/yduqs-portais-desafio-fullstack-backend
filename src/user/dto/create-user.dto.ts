@@ -37,13 +37,13 @@ export class CreateUserDto {
   birthday: string;
 
   @ApiProperty({
-    example: '20/02/2023',
-    description: 'data de graduação do usuário',
+    example: '2023',
+    description: 'Ano de graduação do usuário',
   })
   @IsNotEmpty({
-    message: 'O campo data de graduação é obrigatório.',
+    message: 'O campo ano de graduação é obrigatório.',
   })
-  graduationDate: string;
+  graduationYear: string;
 
   @ApiProperty({
     example: '009999-9999',

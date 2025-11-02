@@ -10,7 +10,7 @@ const MOCKED_USER = {
   birthday: '06/05/1995',
   name: 'Gabrielle Souza',
   cpf: '26947258723',
-  graduationDate: '20/01/2023',
+  graduationYear: '2023',
   cellphone: '35982295282',
 };
 
@@ -52,7 +52,7 @@ describe('UserService', () => {
         name: 'Gabrielle Souza',
         cpf: '26947258723',
         birthday: '06/05/1995',
-        graduationDate: '20/01/2023',
+        graduationYear: '2023',
         cellphone: '35982295282',
         createdAt: responseData.createdAt,
         updatedAt: responseData.updatedAt,

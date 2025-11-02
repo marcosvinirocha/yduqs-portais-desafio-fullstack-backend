@@ -10,6 +10,6 @@ module.exports = {
   collectCoverageFrom: ['**/*.(t|j)s', '!**/*.e2e-spec.ts'],
   testEnvironment: 'node',
   moduleNameMapper: {
-    '^src/(.*)$': '<rootDir>/../src/$1',
+    '^src/(.*)$': '<rootDir>/src/$1',
   },
 };

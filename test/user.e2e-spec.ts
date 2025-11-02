@@ -35,7 +35,7 @@ describe('User Controller', () => {
         birthday: '06/05/1995',
         name: 'Gabrielle Souza',
         cpf: '26947258723',
-        graduationDate: '20/01/2023',
+        graduationYear: '2023',
         cellphone: '35982295282',
       };
       const response = await request(app.getHttpServer())
@@ -49,7 +49,7 @@ describe('User Controller', () => {
         birthday: '06/05/1995',
         name: 'Gabrielle Souza',
         cpf: '26947258723',
-        graduationDate: '20/01/2023',
+        graduationYear: '2023',
         cellphone: '35982295282',
         createdAt: expect.any(String),
         updatedAt: expect.any(String),

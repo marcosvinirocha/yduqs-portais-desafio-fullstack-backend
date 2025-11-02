@@ -104,7 +104,7 @@ A aplicação fornece os seguintes endpoints da API:
   "name": "Nome do Usuário",
   "cpf": "12345678901",
   "birthday": "01/01/1990",
-  "graduationDate": "01/01/2023",
+  "graduationYear": "01/01/2023",
   "cellphone": "11999999999"
 }
 ```
@@ -118,7 +118,7 @@ A aplicação fornece os seguintes endpoints da API:
   "name": "Nome do Usuário",
   "cpf": "12345678901",
   "birthday": "01/01/1990",
-  "graduationDate": "01/01/2023",
+  "graduationYear": "01/01/2023",
   "cellphone": "11999999999",
   "createdAt": "2023-01-01T00:00:00.000Z",
   "updatedAt": "2023-01-01T00:00:00.000Z"
@@ -239,7 +239,7 @@ A aplicação utiliza o seguinte esquema do banco de dados:
 | name           | String?  | Nulo                          | Nome completo do usuário                  |
 | cpf            | String   | Obrigatório                   | CPF do usuário (ID brasileiro)            |
 | birthday       | String   | Obrigatório                   | Aniversário do usuário (DD/MM/AAAA)       |
-| graduationDate | String   | Obrigatório                   | Data de formatura do usuário (DD/MM/AAAA) |
+| graduationYear | String   | Obrigatório                   | Data de formatura do usuário (DD/MM/AAAA) |
 | cellphone      | String   | Obrigatório                   | Número de telefone do usuário             |
 | createdAt      | DateTime | @default(now())               | Timestamp de criação do registro          |
 | updatedAt      | DateTime | @updatedAt                    | Timestamp de atualização do registro      |

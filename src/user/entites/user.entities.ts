@@ -3,6 +3,6 @@ export default interface User {
   email: string;
   name: string;
   birthday: string;
-  graduationDate: string;
+  graduationYear: string;
   cellphone: string;
 }

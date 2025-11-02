@@ -19,7 +19,7 @@ model User {
   name           String?
   cpf            String
   birthday       String
-  graduationDate String
+  graduationYear String
   cellphone      String
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
