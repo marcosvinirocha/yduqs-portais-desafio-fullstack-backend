@@ -239,7 +239,7 @@ A aplicação utiliza o seguinte esquema do banco de dados:
 | name           | String?  | Nulo                          | Nome completo do usuário                  |
 | cpf            | String   | Obrigatório                   | CPF do usuário (ID brasileiro)            |
 | birthday       | String   | Obrigatório                   | Aniversário do usuário (DD/MM/AAAA)       |
-| graduationYear | String   | Obrigatório                   | Data de formatura do usuário (DD/MM/AAAA) |
+| graduationYear | String   | Obrigatório                   | Data de formatura do usuário (AAAA) |
 | cellphone      | String   | Obrigatório                   | Número de telefone do usuário             |
 | createdAt      | DateTime | @default(now())               | Timestamp de criação do registro          |
 | updatedAt      | DateTime | @updatedAt                    | Timestamp de atualização do registro      |
