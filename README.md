@@ -104,7 +104,7 @@ A aplicação fornece os seguintes endpoints da API:
   "name": "Nome do Usuário",
   "cpf": "12345678901",
   "birthday": "01/01/1990",
-  "graduationYear": "01/01/2023",
+  "graduationYear": "2023",
   "cellphone": "11999999999"
 }
 ```
@@ -118,7 +118,7 @@ A aplicação fornece os seguintes endpoints da API:
   "name": "Nome do Usuário",
   "cpf": "12345678901",
   "birthday": "01/01/1990",
-  "graduationYear": "01/01/2023",
+  "graduationYear": "2023",
   "cellphone": "11999999999",
   "createdAt": "2023-01-01T00:00:00.000Z",
   "updatedAt": "2023-01-01T00:00:00.000Z"
